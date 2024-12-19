@@ -1,0 +1,15 @@
+@import url(style.css);
+
+@media screen and (max-width:700px) {
+    .header-wrapper{
+        font-size: 130%;
+    }
+    .header-title{
+        display: none;
+    }
+    .header-btn-wrapper{
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+}
