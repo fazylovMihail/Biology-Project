@@ -1,5 +1,25 @@
 @import url(style.css);
 
+@media screen and (max-width:1080px){
+    .about-text-wrapper{
+        width: 50%;
+        height: 50%;
+    }
+    h1{
+        font-size: 280%;
+    }
+    .content-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 335px);
+    }
+    .content-btn{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .content-btn-text{
+        font-size: 30px;
+    }
+}
 @media screen and (max-width:700px) {
     .header-wrapper{
         font-size: 130%;
@@ -11,5 +31,32 @@
         justify-content: center;
         width: 100%;
         position: relative;
+    }
+    .about-wrapper{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .about-text-wrapper{
+        position: relative;
+        width: 40%;
+        height: 40%;
+    }
+    h1{
+        font-size: 240%;
+        position: relative;
+    }
+    .content-btn-text{
+        font-size: 25px;
+    }
+    .support-text{
+        font-size: 25px;
+    }
+    .support-input{
+        width: 80%;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+    .support-submit-btn{
+        width: 55%;
     }
 }
