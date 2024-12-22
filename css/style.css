@@ -68,6 +68,7 @@ header{
 .header-title{
     position: absolute;
     left: 0;
+    user-select: text;
 }
 main{
     position: relative;
