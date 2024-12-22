@@ -7,11 +7,15 @@ body{
     background-color: #f2f2f2;
 }
 body *{
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
+}
+body *::selection{
+    background-color: #f2df3a;
+    color: #000;
 }
 header{
     position: relative;
-    background-color: #2648F5;
+    background-color: #000;
     width: 100%;
     height: 13vh;
     display: flex;
@@ -58,7 +62,7 @@ header{
 }
 .header-btn:hover::after{
     width: 100%;
-    border: 1px solid #fff;
+    border: 1px solid #f2df3a;
     transition: 0.3s;
 }
 .header-title{
@@ -91,10 +95,10 @@ main{
     left: 0;
     width: 60%;
     height: 60%;
-    background-color: #2648F5;
+    background-color: #000;
     color: #fff;
     font-size: 125%;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     padding: 0 50px;
 }
 h1{
@@ -124,13 +128,14 @@ h1{
     position: relative;
     background-color: transparent;
     transition: 0.5s;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    background-color: #000;
 }
 .content-btn > img{
     transition: 0.3s;
 }
 .content-btn:hover > img{
-    filter: blur(10px);
+    opacity: 0;
     transition: 0.3s;
 }
 .content-btn:hover > div{
@@ -188,7 +193,7 @@ h1{
 .support-wrapper{
     width: 100%;
     height: 100vh;
-    background-color: #2648F5;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,15 +243,15 @@ h1{
     transition: 0.3s;
 }
 .support-submit-btn:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: #f2df3a;
+    /* color: #fff; */
     transition: 0.3s;
 }
 footer{
     position: relative;
     width: 100%;
     height: 40vh;
-    background-color: #2648F5;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -291,7 +296,7 @@ footer *{
     transition: 0.1s;
 }
 .type-btn:hover{
-    color: #e0e0e0;
+    color: #f2df3a;
     transition: 0.1s;
 }
 .footer-img{
@@ -316,6 +321,6 @@ footer *{
     transition: 0.1s;
 }
 .footer-telephon-number:hover{
-    color: #e0e0e0;
+    color: #f2df3a;
     transition: 0.1s;
 }
