@@ -86,6 +86,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: absolute;
     left: 0;
     width: 60%;
@@ -115,6 +116,7 @@ h1{
     gap: 50px;
 }
 .content-btn{
+    cursor: pointer;
     user-select: none;
     display: flex;
     justify-content: center;
@@ -147,7 +149,6 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2648F5;
     color: #fff;
     width: 50%;
     height: 25%;
@@ -157,17 +158,8 @@ h1{
     z-index: 2;
     border-radius: 15px;
     transition: 0.3s;
-    cursor: pointer;
     transition: 0.1s;
     padding: 0 25px;
-}
-.content-btn-text:hover{
-    transform: scale(1.1);
-    transition: 0.1s;
-}
-.content-btn-text:active{
-    transform: scale(1);
-    transition: 0.1s;
 }
 .content-btn1{
     grid-column: span 2;
@@ -249,4 +241,81 @@ h1{
     background-color: #000;
     color: #fff;
     transition: 0.3s;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #2648F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #fff;
+}
+footer *{
+    user-select: none;
+    white-space: nowrap;
+}
+.footer-wrapper{
+    position: relative;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-content-wrapper{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    color: #fff;
+}
+.footer-content-wrapper *{
+    display: flex;
+    justify-content: center;
+}
+.footer-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer-btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-btn{
+    font-size: 25px;
+}
+.type-btn{
+    cursor: pointer;
+    transition: 0.1s;
+}
+.type-btn:hover{
+    color: #e0e0e0;
+    transition: 0.1s;
+}
+.footer-img{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.default{
+    flex-direction: column;
+    gap: 25px;
+}
+.social{
+    gap: 50px;
+    right: 0;
+}
+.footer-telephon-number{
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.footer-telephon-number:hover{
+    color: #e0e0e0;
+    transition: 0.1s;
 }

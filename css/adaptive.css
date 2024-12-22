@@ -19,6 +19,16 @@
     .content-btn-text{
         font-size: 30px;
     }
+    footer{
+        height: 50vh;
+    }
+    .social{
+        width: 100%;
+        position: absolute;
+        bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (max-width:700px) {
     .header-wrapper{
@@ -58,5 +68,26 @@
     }
     .support-submit-btn{
         width: 55%;
+    }
+    footer{
+        height: 70vh;
+    }
+    .footer-wrapper{
+        /* margin: 50px 0; */
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .social{
+        width: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-text{
+        font-size: 25px;
+    }
+    .footer-btn{
+        font-size: 20px;
     }
 }
