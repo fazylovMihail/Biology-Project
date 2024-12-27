@@ -9,5 +9,8 @@ function btnManager(index){
 
     window.open('indexContent.html', '_self');
 }
+function backBtnManager(){
+    window.open('index.html','_self');
+}
 
-export {btnManager};
+export {btnManager, backBtnManager};

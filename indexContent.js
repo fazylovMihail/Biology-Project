@@ -1,6 +1,10 @@
-const h1 = document.querySelectorAll('h1');
+import {backBtnManager} from "./js/windowLoad.js";
 
-for(let i = 0;i<h1.length;i++){
-    h1[0].innerHTML = localStorage.getItem('name');
-    h1[1].innerHTML = localStorage.getItem('description');
-}
+const contentHeaderH1 = document.querySelector('.content-header-h1');
+const contentWrapper = document.querySelector('.content-wrapper');
+const backBtn = document.querySelector('.back-btn');
+
+contentHeaderH1.innerHTML = localStorage.getItem('name');
+contentWrapper.innerHTML = localStorage.getItem('description');
+
+backBtn.addEventListener('click', ()=>{backBtnManager(window)});
