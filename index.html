@@ -53,7 +53,7 @@
             <form action="" class="support-form">
                 <div class="support-text">Нашёл ошибку? Пиши сюда</div>
                 <div class="support-arrow"><img src="src/Стрелка 1.svg" alt=""></div>
-                <input type="text" class="support-input" placeholder="пиши сюда">
+                <input type="text" id="support" class="support-input" placeholder="пиши сюда">
                 <input class="support-submit-btn" type="submit">
             </form>
         </div>
@@ -82,6 +82,12 @@
         </div>
     </footer>
 
+    <script charset="UTF-8" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script charset="UTF-8">
+        emailjs.init({
+            publicKey: "TnNR8HesP1PY-U2DA",
+        });
+    </script>
     <script src="js/clipBoard.js" charset="UTF-8"></script>
     <script type="module" src="index.js" charset="UTF-8"></script>
 </body>
