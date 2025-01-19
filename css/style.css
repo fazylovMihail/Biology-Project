@@ -10,7 +10,7 @@ body{
     outline: 1px solid black;
 } */
 body *::selection{
-    background-color: #f2df3a;
+    background-color: #ffc334;
     color: #000;
 }
 header{
@@ -62,7 +62,7 @@ header{
 }
 .header-btn:hover::after{
     width: 100%;
-    border: 1px solid #f2df3a;
+    border: 1px solid #ffc334;
     transition: 0.3s;
 }
 .header-title{
@@ -222,7 +222,7 @@ h1{
     transition: 0.3s;
 }
 .support-submit-btn:hover{
-    background-color: #f2df3a;
+    background-color: #ffc334;
     /* color: #fff; */
     transition: 0.3s;
 }
@@ -275,7 +275,7 @@ footer *{
     transition: 0.1s;
 }
 .type-btn:hover{
-    color: #f2df3a;
+    color: #ffc334;
     transition: 0.1s;
 }
 .footer-img{
@@ -300,6 +300,6 @@ footer *{
     transition: 0.1s;
 }
 .footer-telephon-number:hover{
-    color: #f2df3a;
+    color: #ffc334;
     transition: 0.1s;
 }

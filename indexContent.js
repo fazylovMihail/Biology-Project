@@ -1,5 +1,5 @@
 import { backBtnManager, openFinishContent } from "./js/windowLoad.js";
-import { moduleCounts } from "./js/arrays.js";
+import { imgMidle } from "./js/arrays.js";
 import { Content } from "./js/classContent.js";
 
 const contentWrapper = document.querySelector('.content-wrapper');
@@ -7,15 +7,15 @@ const backBtn = document.querySelector('.back-btn');
 
 const localIndex = localStorage.getItem('index');
 
-for(let i = 0;i<moduleCounts[localIndex];i++){
-    const contentCard = new Content(i);
+for(let i = 0;i<imgMidle[localIndex].length;i++){
+    const contentCard = new Content('','',imgMidle[localIndex][i]);
     contentWrapper.innerHTML += contentCard.ContentDrower();
 }
 
-const contentBtn = document.querySelectorAll('.content-btn');
+const contentBtnMidle = document.querySelectorAll('.content-btn-midle');
 
-for(let i = 0;i<contentBtn.length;i++){
-    contentBtn[i].addEventListener('click', ()=>{openFinishContent(i)});
+for(let i = 0;i<contentBtnMidle.length;i++){
+    contentBtnMidle[i].addEventListener('click', ()=>{openFinishContent(i)});
 }
 
 backBtn.addEventListener('click', ()=>{backBtnManager(window)});
