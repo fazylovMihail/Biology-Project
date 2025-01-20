@@ -1,0 +1,9 @@
+.content-btn-midle{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    border: none;
+}
+.content-btn-midle img{
+    height: 100%;
+}

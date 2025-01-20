@@ -14,6 +14,15 @@ class Content{
     ContentDrower(){
         return `<div class="content-btn-midle">
                     <img src="${this.imgmidle}" alt="">
+                    <div class="content-btn-text-wrapper">
+                        <div class="content-btn-text">${this.name}</div>
+                        <div class="content-btn-opener">Перейти</div>
+                    </div>
+                </div>`;
+    }
+    FinishCardDrower(){
+        return `<div class="content-btn-midle">
+                    <img src="${this.imgmidle}" alt="">
                 </div>`;
     }
     ListFinishWindowDrower(){
