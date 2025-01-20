@@ -7,7 +7,7 @@ const contentWrapper = document.querySelector('.content-wrapper');
 const localIndex = localStorage.getItem('index');
 const indexContentBtn = localStorage.getItem('indexContentBtn')
 
-contentHeaderH1.innerHTML = `${Number(indexContentBtn+1)}-я полка, ${Number(localIndex+1)}-го шкафа`;
+contentHeaderH1.innerHTML = `${Number(indexContentBtn)+1}-я полка, ${Number(localIndex+1)}-го шкафа`;
 
 const contentCard = new Content(null,null,imgMidle[localIndex][indexContentBtn]);
 contentWrapper.innerHTML += contentCard.FinishCardDrower();
