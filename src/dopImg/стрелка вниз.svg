@@ -1,0 +1,14 @@
+<svg width="158.000000" height="108.000000" viewBox="0 0 158 108" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_21">
+			<rect id="рисунок-7" width="158.000000" height="108.000000" transform="translate(158.000000 108.000000) rotate(180.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip2_21)">
+		<rect id="rect1" x="81.587036" y="112.184082" rx="10.789821" width="21.579641" height="122.548363" transform="rotate(-144.026 81.587036 112.184082)" fill="#6c6c6c" fill-opacity="1.000000"/>
+		<rect id="rect2" x="94.215759" y="99.000000" rx="10.787717" width="21.575434" height="122.572960" transform="rotate(143.801 94.215759 99.000000)" fill="#6c6c6c" fill-opacity="1.000000"/>
+	</g>
+</svg>

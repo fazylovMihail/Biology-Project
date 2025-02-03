@@ -34,5 +34,6 @@ const listTexts = [
     [],
     []
 ];
+const language = ['RUS','ENG'];
 
-export {names, descriptions, imgStart, imgMidle, listTexts};
+export {names, descriptions, imgStart, imgMidle, listTexts, language};

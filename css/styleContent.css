@@ -8,9 +8,9 @@ body{
     display: flex;
     justify-content: center;
 }
-body *::selection{
+/* body *::selection{
     background-color: #f2df3a;
-}
+} */
 /* body *{
     outline: 1px solid #fff;
 } */

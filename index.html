@@ -4,66 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/adaptive.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="top-window">
+        <div class="circle-btn"></div>
+        <div class="header-btn-wrapper">
+            <div class="header-btn"></div>
+        </div>
+    </div>
+    <div class="bottom-window"><img onclick="document.querySelector('.about-wrapper').scrollIntoView({behavior:'smooth'});" src="src/dopImg/стрелка вниз.svg" alt=""></div>
     <header>
-        <div class="header-wrapper">
-            <div class="header-title">Био музей<br>35 гимназии</div>
-            <div class="header-btn-wrapper">
-                <div class="header-btn" onclick="document.querySelector('#about-target').scrollIntoView({behavior: 'smooth'})">О нас</div>
-                <div class="header-btn" onclick="document.querySelector('#content-target').scrollIntoView({behavior: 'smooth'})">Главная</div>
-                <div class="header-btn" onclick="document.querySelector('#support-target').scrollIntoView({behavior: 'smooth'})">Помощь</div>
+        <div class="about-wrapper">
+            <h1>Биологический музей<br>35 гимназии</h1>
+            <div class="background-square-wrapper">
+                <div class="background-square left-square"></div>
+                <div class="background-square right-square"></div>
             </div>
+            <div class="to-bottom-img"><img src="src/dopImg/стрелка вниз.svg" alt=""></div>
         </div>
     </header>
-    <main>
-        <div class="about-wrapper" id="about-target">
-            <div class="about-text-wrapper">Добро пожаловать на сайт музея 35 гимназии</div>
-            <h1 class="about-title">О нас</h1>
-        </div>
-        <div class="content-wrapper" id="content-target"></div>
-        <div class="support-wrapper" id="support-target">
-            <form action="" class="support-form">
-                <div class="support-text">Нашёл ошибку? Пиши сюда</div>
-                <div class="support-arrow"><img src="src/dopImg/Стрелка 1.svg" alt=""></div>
-                <input type="text" id="support" class="support-input" placeholder="пиши сюда">
-                <input class="support-submit-btn" type="submit">
-            </form>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <div class="footer-content-wrapper default">
-                <div class="footer-text">Контакты</div>
-                <div class="footer-btn-wrapper">
-                    <div class="footer-btn">почта: <span class="footer-telephon-number" title="скопировать почту"></span></div>
-                    <div class="footer-btn">номер телефона: <span class="footer-telephon-number" title="скопировать телефон"></span></div>
-                </div>
-            </div>
-            <div class="footer-content-wrapper default">
-                <div class="footer-text">Контент</div>
-                <div class="footer-btn-wrapper">
-                    <div class="footer-btn type-btn" onclick="document.querySelector('#about-target').scrollIntoView({behavior: 'smooth'})">О нас</div>
-                    <div class="footer-btn type-btn" onclick="document.querySelector('#content-target').scrollIntoView({behavior: 'smooth'})">Выставка</div>
-                    <div class="footer-btn type-btn" onclick="document.querySelector('#support-target').scrollIntoView({behavior: 'smooth'})">Помощь</div>
-                </div>
-            </div>
-            <div class="footer-content-wrapper social">
-                <div class="footer-img"></div>
-                <div class="footer-img"></div>
-            </div>
-        </div>
-    </footer>
 
-    <script charset="UTF-8" type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script charset="UTF-8">
-        emailjs.init({
-            publicKey: "TnNR8HesP1PY-U2DA",
-        });
-    </script>
-    <script src="js/clipBoard.js" charset="UTF-8"></script>
-    <script type="module" src="index.js" charset="UTF-8"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
