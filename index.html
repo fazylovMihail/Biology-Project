@@ -10,7 +10,7 @@
     <div class="top-window">
         <div class="circle-btn"></div>
         <div class="header-btn-wrapper">
-            <div class="header-btn"></div>
+            <div class="header-btn">language/<span class="click-area-language"></span></div>
         </div>
     </div>
     <div class="bottom-window"><img onclick="document.querySelector('.about-wrapper').scrollIntoView({behavior:'smooth'});" src="src/dopImg/стрелка вниз.svg" alt=""></div>
@@ -21,9 +21,14 @@
                 <div class="background-square left-square"></div>
                 <div class="background-square right-square"></div>
             </div>
-            <div class="to-bottom-img"><img src="src/dopImg/стрелка вниз.svg" alt=""></div>
+            <div class="to-bottom-img"><img onclick="document.querySelector('main').scrollIntoView({behavior:'smooth'})" src="src/dopImg/стрелка вниз.svg" alt=""></div>
         </div>
     </header>
+    <main>
+        <div class="content-wrapper">
+            <div class="content-btn-wrapper"></div>
+        </div>
+    </main>
 
     <script type="module" src="index.js"></script>
 </body>

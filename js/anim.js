@@ -5,7 +5,7 @@ function headerManager(ok, await_s){
     // const bottomObjImg = bottomObj.querySelector('img');
 
     if(ok){
-        topObj.style = `width:30%; transition:${await_s}s`;
+        topObj.style = `width:28%; transition:${await_s}s`;
         bottomObj.style = `z-index:99;`
         setTimeout(()=>{
             // bottomObjImg.style = `opacity:1; width:80px; transtion:${await_s}s`;

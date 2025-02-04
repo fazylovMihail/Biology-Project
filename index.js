@@ -1,20 +1,21 @@
-// import { contentManager } from "./js/windowLoad.js";
-// import { names, imgStart } from './js/arrays.js';
+import { contentManager } from "./js/windowLoad.js";
+import { names, imgStart, language } from './js/arrays.js';
+import { headerManager } from "./js/anim.js";
 // import { SendEmail } from "./js/sendEmail.js";
-// import { Content } from "./js/classContent.js";
+import { Content } from "./js/classContent.js";
 
-// const contentWrapper = document.querySelector('.content-wrapper');
+const contentWrapper = document.querySelector('.content-btn-wrapper');
 
-// for(let i = 0;i<names.length;i++){
-//     const contentBtnI = new Content(names[i],imgStart[i]);
-//     contentWrapper.innerHTML += contentBtnI.FirstContentDrower();
-// }
+for(let i = 0;i<names.length;i++){
+    const contentBtnI = new Content(names[i],imgStart[i]);
+    contentWrapper.innerHTML += contentBtnI.FirstContentDrower();
+}
 
-// const contentBtn = document.querySelectorAll('.content-btn');
+const contentBtn = document.querySelectorAll('.content-btn');
 
-// for(let i = 0;i<contentBtn.length;i++){
-//     contentBtn[i].addEventListener('click',()=>{contentManager(i)});
-// }
+for(let i = 0;i<contentBtn.length;i++){
+    contentBtn[i].addEventListener('click',()=>{contentManager(i)});
+}
 
 // const supportForm = document.querySelector('.support-form');
 // supportForm.addEventListener('submit', SendManager);
@@ -31,10 +32,6 @@
 //         return;
 //     }
 // }
-
-import { headerManager } from "./js/anim.js";
-import { language } from "./js/arrays.js";
-
 headerManager(false)
 
 const circleBtn = document.querySelector('.circle-btn');
@@ -52,14 +49,14 @@ circleBtn.addEventListener('click', ()=>{
 });
 
 const headerBtn = document.querySelector('.header-btn');
+const clickAreaLanguage = headerBtn.querySelector('.click-area-language');
 let clickCount = 0;
 
-headerBtn.innerHTML = `language/${language[clickCount]}`;
+clickAreaLanguage.innerHTML = language[0];
 clickCount++;
 
 headerBtn.addEventListener('click',()=>{
     if(clickCount >= language.length) clickCount = 0;
-    console.log(clickCount);
-    headerBtn.innerHTML = `language/${language[clickCount]}`;
+    clickAreaLanguage.innerHTML = language[clickCount];
     clickCount++;
 })
