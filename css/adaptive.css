@@ -19,6 +19,7 @@
     .footer-wrapper{
         justify-content: center;
         flex-direction: column;
+        gap: 50px;
     }
     .footer-content-wrapper *{
         text-align: center;
