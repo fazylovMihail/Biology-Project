@@ -8,7 +8,7 @@
 		</clipPath>
 	</defs>
 	<g clip-path="url(#clip2_21)">
-		<rect id="rect1" x="81.587036" y="112.184082" rx="10.789821" width="21.579641" height="122.548363" transform="rotate(-144.026 81.587036 112.184082)" fill="#6c6c6c" fill-opacity="1.000000"/>
-		<rect id="rect2" x="94.215759" y="99.000000" rx="10.787717" width="21.575434" height="122.572960" transform="rotate(143.801 94.215759 99.000000)" fill="#6c6c6c" fill-opacity="1.000000"/>
+		<rect id="rect1" x="81.587036" y="112.184082" rx="10.789821" width="21.579641" height="122.548363" transform="rotate(-144.026 81.587036 112.184082)" fill="#1c1cde" fill-opacity="1.000000"/>
+		<rect id="rect2" x="94.215759" y="99.000000" rx="10.787717" width="21.575434" height="122.572960" transform="rotate(143.801 94.215759 99.000000)" fill="#1c1cde" fill-opacity="1.000000"/>
 	</g>
 </svg>
