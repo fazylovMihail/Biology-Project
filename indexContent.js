@@ -12,10 +12,10 @@ for(let i = 0;i<imgMidle[localIndex].length;i++){
     contentWrapper.innerHTML += contentCard.ContentDrower();
 }
 
-const contentBtnOpener = document.querySelectorAll('.content-btn-opener');
+const contentBtnMidle = document.querySelectorAll('.content-btn-midle');
 
-for(let i = 0;i<contentBtnOpener.length;i++){
-    contentBtnOpener[i].addEventListener('click', ()=>{openFinishContent(i)});
+for(let i = 0;i<contentBtnMidle.length;i++){
+    contentBtnMidle[i].addEventListener('click', ()=>{openFinishContent(i)});
 }
 
 backBtn.addEventListener('click', ()=>{backBtnManager(window)});

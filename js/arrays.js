@@ -10,7 +10,7 @@ const imgStart = [
     './src/Window1_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.24.jpeg'
 ];
 const imgMidle = [
-    ['./src/Window2_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.48.jpeg','./src/Window2_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.47 (1).jpeg','./src/Window2_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.47.jpeg'],
+    ['./src/Window2_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.47.jpeg','./src/Window2_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.47 (1).jpeg','./src/Window2_Btn_Img/WhatsApp Image 2025-01-18 at 11.54.48.jpeg'],
     [],
     [],
     [],
