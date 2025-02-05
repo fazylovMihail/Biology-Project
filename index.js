@@ -32,21 +32,35 @@ for(let i = 0;i<contentBtn.length;i++){
 //         return;
 //     }
 // }
-headerManager(false)
 
-const circleBtn = document.querySelector('.circle-btn');
-let click;
+const topObj = document.querySelector('.top-window');
+const bottomObj = document.querySelector('.bottom-window');
+const objs = [topObj, bottomObj];
 
-circleBtn.addEventListener('click', ()=>{
-    if(!click){
-        headerManager(true, 0.3);
-        click = true;
+if(window.innerWidth > 865){
+    for(let i = 0;i<objs.length;i++){
+        objs[i].style = `display:flex;`;
     }
-    else{
-        headerManager(false, 0.3);
-        click = false;
+    headerManager(false);
+    const circleBtn = document.querySelector('.circle-btn');
+    let click;
+    
+    circleBtn.addEventListener('click', ()=>{
+        if(!click){
+            headerManager(true, 0.3);
+            click = true;
+        }
+        else{
+            headerManager(false, 0.3);
+            click = false;
+        }
+    });
+}
+else{
+    for(let i = 0;i<objs.length;i++){
+        objs[i].style = `display:none`;
     }
-});
+}
 
 const headerBtn = document.querySelector('.header-btn');
 const clickAreaLanguage = headerBtn.querySelector('.click-area-language');

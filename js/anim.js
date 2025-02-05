@@ -10,6 +10,7 @@ function headerManager(ok, await_s){
         setTimeout(()=>{
             // bottomObjImg.style = `opacity:1; width:80px; transtion:${await_s}s`;
             headerBtnWrapper.style.zIndex = 1;
+            topObj.style.minWidth = '300px'
         },await_s*1000);
         bottomObj.style = `width:13%; opacity:1; transition:${await_s}s`;
         headerBtnWrapper.style = `opacity:1; transition:${await_s}`;
